@@ -1,2 +1,0 @@
-# FrontTask
-Home Task
