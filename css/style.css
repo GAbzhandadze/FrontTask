@@ -70,6 +70,42 @@ header {
         padding: 19px; }
     header > section.HeaderContainer > ul:last-of-type > li:last-of-type {
       border: initial; }
+    header > section.HeaderContainer > ul.respMenu {
+      display: none;
+      position: absolute;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100vw;
+      height: calc(100vh - 100px);
+      background-color: #fff;
+      top: 100px;
+      right: -100vw;
+      transition: .3s;
+      z-index: 9999; }
+    header > section.HeaderContainer > span.respBTN {
+      display: none;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: solid 1px #363E97;
+      padding-top: 16px;
+      transition: .3s; }
+      header > section.HeaderContainer > span.respBTN > span {
+        width: 60%;
+        height: 5px;
+        background-color: #363E97;
+        display: block;
+        margin-bottom: 5px;
+        transition: .3s; }
 
 main {
   width: 100%;
@@ -102,7 +138,8 @@ main {
       justify-content: space-between;
       -webkit-align-items: flex-end;
       -ms-flex-align: end;
-      align-items: flex-end; }
+      align-items: flex-end;
+      background-position: center; }
       main > section.monitorCont > section > p {
         font-family: 'roboto';
         color: white;
