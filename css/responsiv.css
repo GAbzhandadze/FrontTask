@@ -10,11 +10,16 @@
 
 
         header > section.HeaderContainer > ul:first-of-type,
-        header > section.HeaderContainer > ul:last-of-type,
         main > section.newsBoard > section > section > section.news:last-of-type,
         main > section.videos {
             display: none;
         }
+
+        header > section.HeaderContainer > ul:last-of-type {
+            position:absolute;
+            right:120px;
+        }
+
 
         header > section.HeaderContainer > ul.respMenu {
             display: flex;
@@ -79,6 +84,14 @@
         }
         main > section.newsBoard > section > section {
             flex-direction:column;
+        }
+
+        header > section.HeaderContainer > ul:last-of-type {
+            right: 140px;
+        }
+
+        header > section.HeaderContainer > ul:last-of-type > li:not(:last-child) {
+            display:none;
         }
 
             main > section.newsBoard > section > section > section.news {
