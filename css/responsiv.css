@@ -18,11 +18,10 @@
 
         header > section.HeaderContainer > ul.respMenu {
             display: flex;
-            
         }
 
         .active {
-            right:0!important;
+            width:100vw !important;
         }
 
 

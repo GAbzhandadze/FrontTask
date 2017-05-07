@@ -80,13 +80,14 @@ header {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 100vw;
+      width: 0vw;
       height: calc(100vh - 100px);
       background-color: #fff;
       top: 100px;
-      right: -100vw;
+      right: 0;
       transition: .3s;
-      z-index: 9999; }
+      z-index: 9999;
+      overflow: hidden; }
     header > section.HeaderContainer > span.respBTN {
       display: none;
       -webkit-flex-direction: column;
@@ -361,6 +362,158 @@ main {
       color: #58595B;
       line-height: 27px;
       margin-bottom: 23px; }
+  main > section.team,
+  main > section.ames {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    main > section.team > section.teamContainer,
+    main > section.team > section.amesContainer,
+    main > section.ames > section.teamContainer,
+    main > section.ames > section.amesContainer {
+      width: 1170px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  main > section.ames {
+    height: 567px;
+    border-bottom: solid 1px #EE4036; }
+    main > section.ames > section.amesContainer {
+      width: 1170px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      main > section.ames > section.amesContainer > section.ame h4 {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #EE4036;
+        margin: 4px 0; }
+      main > section.ames > section.amesContainer > section.ame padding {
+        font-size: 20px;
+        color: #58595B; }
+  main > section.team {
+    height: 390px; }
+    main > section.team > section.teamContainer > section.person {
+      width: 205px;
+      height: 170px;
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      main > section.team > section.teamContainer > section.person > p {
+        color: #000;
+        font-size: 22px;
+        text-transform: uppercase; }
+    main > section.team > section.teamContainer > section.person:first-child {
+      background-image: url(../img/manOnBox.png); }
+    main > section.team > section.teamContainer > section.person:nth-child(2) {
+      background-image: url(../img/manHandsUp.png); }
+    main > section.team > section.teamContainer > section.person:nth-child(3) {
+      background-image: url(../img/manWithQuestionMark.png); }
+    main > section.team > section.teamContainer > section.person:last-child {
+      background-image: url(../img/manWithHeart.png); }
+  main > section.map {
+    width: 100%;
+    height: auto;
+    background-color: #E6E6E6;
+    padding: 30px 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    main > section.map #map {
+      width: 1170px;
+      height: 460px; }
+  main > form > section.info {
+    width: 1170px;
+    height: 621px;
+    margin: auto;
+    background-color: #363E97;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    main > form > section.info ul {
+      margin-top: 34px; }
+    main > form > section.info > ul:first-of-type {
+      margin-left: 101px; }
+      main > form > section.info > ul:first-of-type > li {
+        font-size: 20px;
+        color: #fff; }
+      main > form > section.info > ul:first-of-type > li:nth-child(2n) {
+        margin-bottom: 22px; }
+    main > form > section.info > ul:last-of-type {
+      margin-left: 58px; }
+      main > form > section.info > ul:last-of-type > li {
+        margin-bottom: 21px; }
+        main > form > section.info > ul:last-of-type > li > label {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          color: #fff;
+          font-size: 22px;
+          text-indent: 28px; }
+          main > form > section.info > ul:last-of-type > li > label > textarea,
+          main > form > section.info > ul:last-of-type > li > label > input {
+            width: 630px;
+            height: 60px;
+            border: solid 1px #fff;
+            background-color: transparent;
+            text-indent: 10px;
+            color: #5E65AC;
+            font-size: 20px;
+            margin-top: 9px; }
+          main > form > section.info > ul:last-of-type > li > label ::-webkit-input-placeholder {
+            color: #5E65AC; }
+          main > form > section.info > ul:last-of-type > li > label ::-moz-placeholder {
+            color: #5E65AC; }
+          main > form > section.info > ul:last-of-type > li > label :-ms-input-placeholder {
+            color: #5E65AC; }
+          main > form > section.info > ul:last-of-type > li > label :-moz-placeholder {
+            color: #5E65AC; }
+          main > form > section.info > ul:last-of-type > li > label > textarea {
+            resize: none;
+            height: 97px; }
+        main > form > section.info > ul:last-of-type > li > button {
+          width: 130px;
+          height: 45px;
+          background-color: #EE4036;
+          color: #fff;
+          font-size: 18.75px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          cursor: pointer; }
 
 footer {
   width: 100%;
@@ -382,6 +535,7 @@ footer {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-bottom: 31px;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -429,7 +583,6 @@ footer {
   footer > section.rightPart {
     width: 100%;
     height: 60px;
-    margin-top: 31px;
     background-color: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
